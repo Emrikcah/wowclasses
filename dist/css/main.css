@@ -243,7 +243,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-war {
   background: url("../img/warrior.jpg");
-  min-width: 244px;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
