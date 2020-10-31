@@ -228,9 +228,6 @@ header .main-nav .logo {
   .main-content .card {
     display: flex;
   }
-  .main-content .card .bg-image {
-    width: 100%;
-  }
 }
 
 .main-content .card:hover {
@@ -239,6 +236,7 @@ header .main-nav .logo {
 
 .main-content .card .bg-image {
   height: 253px;
+  width: 100%;
 }
 
 .main-content .card .bg-war {

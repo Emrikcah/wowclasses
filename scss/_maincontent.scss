@@ -25,11 +25,6 @@
 
     @media (min-width: 1280px) {
       display: flex;
-     
-
-      .bg-image {
-        width: 100%;
-      }
     }
 
     &:hover {
@@ -38,11 +33,12 @@
 
     .bg-image {
       height: 253px;
+      width: 100%;
     }
 
     .bg-war {
       background: url("../img/warrior.jpg");
-    //   min-width: 244px;
+      //   min-width: 244px;
       @include bg-img;
     }
     .bg-pal {
