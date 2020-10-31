@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <!-- my styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>World Of Warcraft</title>
+  </head>
+
+  <body>
+    <header>
+        <!-- mobile-nav -->
+      <nav class="mobile-nav">
+        <div class="m-nav container">
+          <div class="menu-btn" data-open-btn>
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <img src="img/mobilewow.png" alt="" />
+          <div class="mobile-user">
+            <i class="far fa-user"></i>
+          </div>
+        </div>
+        <!-- mobile-nav end -->
+
+
+        <!-- Mobile modal-->
+        <div class="mobile-modal" data-modal>
+          <div class="mobile-modal-close" data-close-btn>
+            <i class="fas fa-times "></i>
+          </div>
+
+          <div >
+            <img src="img/classic_wow_logo.png" class="mobile-modal-img" alt="" />
+          </div>
+          <div>
+            <form action="">
+              <span class="icon"></span>
+              <input
+                class="mobile-modal-input"
+                type="search"
+                placeholder="Search for characters, blogs, and more..."
+              />
+            </form>
+            <nav class="mobile-modal-nav">
+              <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">game</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">forums</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">esports</a></li>
+                <li><a href="#">wow classic</a></li>
+                <li><a href="#">log in</a></li>
+              </ul>
+            </nav>
+            <a href="">try free</a>
+          </div>
+          <div>
+            <h1>blizzard</h1>
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile modal end-->
+
+      <nav class="desktop-nav">
+        <div class="d-nav container">
+          <a href="https://www.blizzard.com" class="">
+            <h1 class="desktop-nav-logo">Blizzard</h1>
+          </a>
+          <ul class="left-menu">
+            <li><a href="#">games</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">news</a></li>
+            <li><a href="#">esports</a></li>
+          </ul>
+          <ul class="right-menu">
+            <li><a href="#">support</a></li>
+            <li><a href="#">my account</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <nav class="main-nav">
+            <img class="logo" src="img/logo.png" alt="">
+            <ul class="main-menu">
+                <li class="nav-item"><a class="nav-link" href="">games</a></li>
+                <li class="nav-item"><a class="nav-link" href="">news</a></li>
+                <li class="nav-item"><a class="nav-link" href="">forums</a></li>
+                <li class="nav-item"><a class="nav-link" href="">shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="">esports</a></li>
+                <li class="nav-item"><a class="nav-link" href="">wow classic</a></li>
+            </ul>
+            <ul class="right-menu">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <li>log in</li>
+                <li>subscribe</li>
+                <li>try free</li>
+            </ul>
+        </nav> -->
+    </header>
+    <section class="main-content">
+      <div class="title-inner">
+        <h1 class="title">classes</h1>
+        <p class="card-text">
+          From knights in shiny armor to skulking stalkers and cunning
+          spellcasters, each class in World of Warcraft presents unique
+          challenges and gameplay for you to master. What is your calling?
+        </p>
+      </div>
+    </section>
+    <!-- get text from a site using document.body.innerText -->
+    <main class="main-content grid">
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-war"></div>
+        </div>
+        <div class="inner-text">
+          <h2>warrior</h2>
+          <p class="subtitle">tank, damage</p>
+          <p class="font-size-sm card-text">
+            For as long as war has raged, heroes from every race have aimed to
+            master the art of battle. Warriors combine strength, leadership, and
+            a vast knowledge of arms and armor to wreak havoc in glorious
+            combat.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-pal"></div>
+        </div>
+        <div class="inner-text">
+          <h2>paladin</h2>
+          <p class="subtitle">tank, healer, damage</p>
+          <p class="font-size-sm card-text">
+            This is the call of the paladin: to protect the weak, to bring
+            justice to the unjust, and to vanquish evil from the darkest corners
+            of the world.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-hunt"></div>
+        </div>
+        <div class="inner-text">
+          <h2>hunter</h2>
+          <p class="subtitle">tank, healer, damage</p>
+          <p class="font-size-sm card-text">
+            This is the call of the paladin: to protect the weak, to bring
+            justice to the unjust, and to vanquish evil from the darkest corners
+            of the world.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-rog"></div>
+        </div>
+        <div class="inner-text">
+          <h2>rogue</h2>
+          <p class="subtitle">tank, healer, damage</p>
+          <p class="font-size-sm card-text">
+            This is the call of the paladin: to protect the weak, to bring
+            justice to the unjust, and to vanquish evil from the darkest corners
+            of the world.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-prt"></div>
+        </div>
+        <div class="inner-text">
+          <h2>priest</h2>
+          <p class="subtitle">tank, healer, damage</p>
+          <p class="font-size-sm card-text">
+            This is the call of the paladin: to protect the weak, to bring
+            justice to the unjust, and to vanquish evil from the darkest corners
+            of the world.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-dk"></div>
+        </div>
+        <div class="inner-text">
+          <h2>death knight</h2>
+          <p class="subtitle">tank, healer, damage</p>
+          <p class="font-size-sm card-text">
+            This is the call of the paladin: to protect the weak, to bring
+            justice to the unjust, and to vanquish evil from the darkest corners
+            of the world.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-sha"></div>
+        </div>
+        <div class="inner-text">
+          <h2>shaman</h2>
+          <p class="subtitle">tank, healer, damage</p>
+          <p class="font-size-sm card-text">
+            This is the call of the paladin: to protect the weak, to bring
+            justice to the unjust, and to vanquish evil from the darkest corners
+            of the world.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-mage"></div>
+        </div>
+        <div class="inner-text">
+          <h2>mage</h2>
+          <p class="subtitle">tank, healer, damage</p>
+          <p class="font-size-sm card-text">
+            This is the call of the paladin: to protect the weak, to bring
+            justice to the unjust, and to vanquish evil from the darkest corners
+            of the world.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-lock"></div>
+        </div>
+        <div class="inner-text">
+          <h2>warlock</h2>
+          <p class="subtitle">tank, healer, damage</p>
+          <p class="font-size-sm card-text">
+            This is the call of the paladin: to protect the weak, to bring
+            justice to the unjust, and to vanquish evil from the darkest corners
+            of the world.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-monk"></div>
+        </div>
+        <div class="inner-text">
+          <h2>monk</h2>
+          <p class="subtitle">tank, healer, damage</p>
+          <p class="font-size-sm card-text">
+            This is the call of the paladin: to protect the weak, to bring
+            justice to the unjust, and to vanquish evil from the darkest corners
+            of the world.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-dru"></div>
+        </div>
+        <div class="inner-text">
+          <h2>druid</h2>
+          <p class="subtitle">tank, healer, damage</p>
+          <p class="font-size-sm card-text">
+            This is the call of the paladin: to protect the weak, to bring
+            justice to the unjust, and to vanquish evil from the darkest corners
+            of the world.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="bg-image">
+          <div class="bg-dh"></div>
+        </div>
+        <div class="inner-text">
+          <h2>demon hunter</h2>
+          <p class="subtitle">tank, healer, damage</p>
+          <p class="font-size-sm card-text">
+            This is the call of the paladin: to protect the weak, to bring
+            justice to the unjust, and to vanquish evil from the darkest corners
+            of the world.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
