@@ -1,0 +1,103 @@
+
+
+.main-content {
+    margin: 2em auto;
+    
+
+    .title{
+        font-size: 2.4rem;
+        padding-bottom: 20px;
+    }
+
+    .title-inner{
+        max-width: 800px;
+        margin: 0 auto;
+        
+    }
+
+    .title-inner p{
+        padding: 0 2px 0 2px;
+        font-size: .8rem;
+    }
+
+    .card {
+
+        border: 1px solid $border-color;
+        border-radius: 0.25em;
+        background: $card-bg;
+        color: #fff;
+        text-align: left;
+
+        &:hover{
+            border: 1px solid $card-heading;
+        }
+
+        .bg-image {
+            height: 225px;
+            // position: relative;
+        }
+
+        .bg-war {
+            background: url("../img/warrior.jpg");
+           @include bg-img;
+        }
+        .bg-pal{
+            background: url("../img/paladin.jpg");
+            @include bg-img;
+        }
+        .bg-hunt{
+            background: url("../img/hunter2.jpg");
+            @include bg-img;
+        }
+        .bg-rog{
+            background: url("../img/rogue2.jpg");
+            @include bg-img;
+        }
+        .bg-prt{
+            background: url("../img/priest2.jpg");
+            @include bg-img;
+        }
+        .bg-dk{
+            background: url("../img/dk2.jpg");
+            @include bg-img;
+        }
+        .bg-sha{
+            background: url("../img/shaman.jpg");
+            @include bg-img;
+        }
+        .bg-mage{
+            background: url("../img/mage2.jpg");
+            @include bg-img;
+        }
+        .bg-lock{
+            background: url("../img/warlock.jpg");
+            @include bg-img;
+        }
+        .bg-monk{
+            background: url("../img/monk.jpg");
+            @include bg-img;
+        }
+        .bg-dru{
+            background: url("../img/druid.jpg");
+            @include bg-img;
+        }
+        .bg-dh{
+            background: url("../img/demonhunter.jpg");
+            @include bg-img;
+        }
+
+        .subtitle {
+            font-size: .80rem;
+        }
+
+        .font-size-sm {
+            font-size: .85rem;
+        }
+
+        .inner-text {
+            padding: 20px;
+        }
+
+
+    }
+}

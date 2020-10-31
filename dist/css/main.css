@@ -1,0 +1,381 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  text-align: center;
+  background: url("../img/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #278da4;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h1,
+h2 {
+  text-transform: capitalize;
+  color: #f8b700;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #b1997f;
+}
+
+.card-text {
+  color: #ebdec2;
+}
+
+.btn {
+  font-size: 0.85em;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  background-color: #f8b700;
+  border-radius: 0.35em;
+  display: inline-block;
+}
+
+header {
+  position: relative;
+}
+
+header .mobile-nav {
+  background: #211510;
+}
+
+header .mobile-nav .mobile-modal {
+  position: absolute;
+  background: #211510;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  padding: 30px;
+  transform: translateX(-500px);
+  transition: transform 0.5s ease-in-out;
+}
+
+header .mobile-nav .mobile-modal .mobile-modal-img {
+  width: 195px;
+}
+
+header .mobile-nav .mobile-modal .mobile-modal-input {
+  background: #000;
+  border: 1px solid #352011;
+  border-right: none;
+  border-left: none;
+  color: #f8b700;
+  outline: none;
+  padding: 15px 20px 15px 54px;
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+}
+
+header .mobile-nav .mobile-modal .mobile-modal-close {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+header .mobile-nav .mobile-modal .mobile-modal-close .fas {
+  cursor: pointer;
+  font-size: 30px;
+  color: #f8b700;
+}
+
+header .mobile-nav .mobile-modal.show {
+  transform: translateX(0px);
+}
+
+header .mobile-nav .m-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+header .mobile-nav .m-nav .menu-btn {
+  font-size: 12px;
+  color: #f8b700;
+  cursor: pointer;
+}
+
+header .mobile-nav .m-nav img {
+  width: 35px;
+}
+
+header .mobile-nav .m-nav .mobile-user {
+  font-size: 20px;
+  color: #39abcd;
+}
+
+header .desktop-nav {
+  background: black;
+  display: none;
+}
+
+header .main-nav {
+  display: none;
+  background: #1c110d;
+}
+
+header .main-nav .logo {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (min-width: 900px) {
+  header .mobile-nav {
+    display: none;
+  }
+  header .desktop-nav {
+    display: block;
+  }
+  header .desktop-nav .d-nav {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px;
+  }
+  header .desktop-nav .d-nav a .desktop-nav-logo {
+    font-size: 2rem;
+    color: #39abcd;
+    margin-right: 10px;
+  }
+  header .desktop-nav .d-nav .left-menu {
+    text-transform: uppercase;
+  }
+  header .desktop-nav .d-nav .right-menu {
+    text-transform: capitalize;
+    margin-left: auto;
+  }
+  header .desktop-nav .d-nav li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  header .main-nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+  }
+}
+
+.main-content {
+  margin: 2em auto;
+}
+
+.main-content .title {
+  font-size: 2.4rem;
+  padding-bottom: 20px;
+}
+
+.main-content .title-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-content .title-inner p {
+  padding: 0 2px 0 2px;
+  font-size: .8rem;
+}
+
+.main-content .card {
+  border: 1px solid #e1e1e1;
+  border-radius: 0.25em;
+  background: #211510;
+  color: #fff;
+  text-align: left;
+}
+
+.main-content .card:hover {
+  border: 1px solid #f8b700;
+}
+
+.main-content .card .bg-image {
+  height: 225px;
+}
+
+.main-content .card .bg-war {
+  background: url("../img/warrior.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .bg-pal {
+  background: url("../img/paladin.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .bg-hunt {
+  background: url("../img/hunter2.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .bg-rog {
+  background: url("../img/rogue2.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .bg-prt {
+  background: url("../img/priest2.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .bg-dk {
+  background: url("../img/dk2.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .bg-sha {
+  background: url("../img/shaman.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .bg-mage {
+  background: url("../img/mage2.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .bg-lock {
+  background: url("../img/warlock.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .bg-monk {
+  background: url("../img/monk.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .bg-dru {
+  background: url("../img/druid.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .bg-dh {
+  background: url("../img/demonhunter.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .card .subtitle {
+  font-size: .80rem;
+}
+
+.main-content .card .font-size-sm {
+  font-size: .85rem;
+}
+
+.main-content .card .inner-text {
+  padding: 20px;
+}
+
+/* Target the grid container */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.main-content {
+  width: 95%;
+  max-width: 1300px;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .card {
+    display: flex;
+    max-height: 253px;
+  }
+  .bg-image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+/* Target the grid container */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.main-content {
+    width: 95%;
+    max-width: 1300px;
+
+}
+
+@media(min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 1280px){
+    .card{
+        display: flex;
+        max-height: 253px;
+    }
+
+    .bg-image{
+        width: 100%;
+    }
+}

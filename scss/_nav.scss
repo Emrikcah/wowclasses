@@ -1,0 +1,143 @@
+header {
+  position: relative;
+
+  .mobile-nav {
+    background: $card-bg;
+
+    // moible-modal
+    .mobile-modal {
+      position: absolute;
+      background: $card-bg;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 100vh;
+      padding: 30px;
+      transform: translateX(-500px);
+      transition: transform 0.5s ease-in-out;
+
+      .mobile-modal-img {
+        width: 195px;
+      }
+
+      .mobile-modal-input {
+        background: $blk;
+        border: 1px solid $modal-border;
+        border-right: none;
+        border-left: none;
+        color: $card-heading;
+        outline: none;
+        padding: 15px 20px 15px 54px;
+        position: relative;
+        width: 100%;
+        font-size: 12px;
+      }
+
+      .mobile-modal-close {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+
+        .fas {
+          cursor: pointer;
+          font-size: 30px;
+          color: $card-heading;
+        }
+      }
+      &.show {
+        transform: translateX(0px);
+      }
+    }
+
+    // moible-modal end
+
+    .m-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 48px;
+
+      .menu-btn {
+        font-size: 12px;
+        color: $card-heading;
+        cursor: pointer;
+      }
+
+      img {
+        width: 35px;
+      }
+
+      .mobile-user {
+        font-size: 20px;
+        color: $primary-color;
+      }
+    }
+  }
+  .desktop-nav {
+    // height: 10px;
+    background: black;
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
+
+    // background: rgba(51, 33, 25, 0.5);
+    background: $main-nav-bg;
+
+    .logo {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+// Nav media query
+@media (min-width: 900px) {
+  //   .menu-btn {
+  //     display: none;
+  //   }
+
+  header {
+    .mobile-nav {
+      display: none;
+    }
+    .desktop-nav {
+      display: block;
+      .d-nav {
+        display: flex;
+        align-items: center;
+        padding: 0px 0px;
+
+        a {
+          .desktop-nav-logo {
+            font-size: 2rem;
+            color: $primary-color;
+            margin-right: 10px;
+          }
+        }
+        .left-menu {
+          text-transform: uppercase;
+        }
+
+        .right-menu {
+          text-transform: capitalize;
+          margin-left: auto;
+        }
+
+        li {
+          display: inline-block;
+          padding: 0px 20px;
+        }
+      }
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      padding: 20px 0;
+      font-size: 13px;
+    }
+  }
+}
