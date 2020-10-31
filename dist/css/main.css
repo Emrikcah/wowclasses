@@ -213,7 +213,7 @@ header .main-nav .logo {
 
 .main-content .title-inner p {
   padding: 0 2px 0 2px;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .main-content .card {
@@ -222,6 +222,15 @@ header .main-nav .logo {
   background: #211510;
   color: #fff;
   text-align: left;
+}
+
+@media (min-width: 1280px) {
+  .main-content .card {
+    display: flex;
+  }
+  .main-content .card .bg-image {
+    width: 100%;
+  }
 }
 
 .main-content .card:hover {
@@ -234,7 +243,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-war {
   background: url("../img/warrior.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -243,7 +251,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-pal {
   background: url("../img/paladin.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -252,7 +259,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-hunt {
   background: url("../img/hunter2.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -261,7 +267,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-rog {
   background: url("../img/rogue2.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -270,7 +275,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-prt {
   background: url("../img/priest2.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -279,7 +283,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-dk {
   background: url("../img/dk2.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -288,7 +291,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-sha {
   background: url("../img/shaman.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -297,7 +299,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-mage {
   background: url("../img/mage2.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -306,7 +307,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-lock {
   background: url("../img/warlock.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -315,7 +315,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-monk {
   background: url("../img/monk.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -324,7 +323,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-dru {
   background: url("../img/druid.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -333,7 +331,6 @@ header .main-nav .logo {
 
 .main-content .card .bg-dh {
   background: url("../img/demonhunter.jpg");
-  width: 100%;
   height: 100%;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -341,11 +338,11 @@ header .main-nav .logo {
 }
 
 .main-content .card .subtitle {
-  font-size: .80rem;
+  font-size: 0.8rem;
 }
 
 .main-content .card .font-size-sm {
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .main-content .card .inner-text {
@@ -367,15 +364,5 @@ header .main-nav .logo {
 @media (min-width: 600px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1280px) {
-  .card {
-    display: flex;
-    max-height: 253px;
-  }
-  .bg-image {
-    width: 100%;
   }
 }
