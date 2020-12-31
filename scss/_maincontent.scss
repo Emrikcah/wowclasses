@@ -38,7 +38,6 @@
 
     .bg-war {
       background: url("../img/warrior.jpg");
-      //   min-width: 244px;
       @include bg-img;
     }
     .bg-pal {
@@ -96,6 +95,10 @@
 
     .inner-text {
       padding: 20px;
+      
+    }
+    .card-text{
+      width: 350px;
     }
   }
 }

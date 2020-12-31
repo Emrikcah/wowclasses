@@ -347,6 +347,10 @@ header .main-nav .logo {
   padding: 20px;
 }
 
+.main-content .card .card-text {
+  width: 350px;
+}
+
 /* Target the grid container */
 .grid {
   display: grid;
